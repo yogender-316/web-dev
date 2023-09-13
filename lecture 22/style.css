@@ -1,0 +1,36 @@
+:root{
+    --custom-width: 400px;
+}
+.container{
+    background-color: beige;
+    height: 650px;
+    border: 5px solid brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    /* custom variable after two hyphen */
+    --primary-color: rebeccapurple;
+
+    background-color: var(--primary-color);
+    width: var(--custom-width );
+    height: 350px;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* x-axis y-axis blur spread */
+    /* box-shadow: 10px 15px 10px 5px burlywood; */
+    box-shadow: 10px 15px 30px 5px red,40px 15px 40 px 10px blue;
+    
+}
+h2{
+    text-shadow: 2px 3px white,2px 3px red,2px 3px pink;
+}
+img{
+    display: flex;
+    justify-content: space-evenly;
+}
